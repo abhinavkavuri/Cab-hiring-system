@@ -32,7 +32,19 @@ require("includes/common.php");
                             <h1 style="color:white;">Book a Cab now.</h1>
                             <p style="color:white;">A Unique Experience</p>
                             <br/>
-                            <a  href="login.php" class="btn btn-danger btn-lg active">Book Now</a>
+                            <?php
+                                 if (isset($_SESSION['email'])) {
+                                  ?>
+                              <a  href="/cabv2/carmenu2/index.php" class="btn btn-danger btn-lg active">Start booking Here !</a>
+                            ?>
+                            <?php
+                             } else {
+                            ?>
+                            <a  href="/cabv2/login/index.php " class="btn btn-danger btn-lg active">Book Now</a>
+                            
+                            <?php
+                             }
+                            ?>
                         </div>
                     </center>
                 </div>

@@ -22,6 +22,8 @@ require("includes/common.php");
             <div class="jumbotron home-spacer" id="products-jumbotron">
                 <h1>Welcome to our Cab Hiring System!</h1>
                 <p>We have the best Cab's waiting for you. No need to hunt around, we have the best reserved just for you.</p>
+                
+                <a  href="/cabv2/carmenu2/index.php" class="btn btn-danger btn-lg active">Start booking Here !</a>
 
             </div>
             
